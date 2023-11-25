@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void merge(int arr[], int left, int mid, int right) {
+void merge(int arr[], int left, int mid, int right) 
+{
     int i, j, k;
     int n1 = mid - left + 1;
     int n2 = right - mid;
@@ -18,11 +19,15 @@ void merge(int arr[], int left, int mid, int right) {
     i = 0; // İlk alt dizi için indeks
     j = 0; // İkinci alt dizi için indeks
     k = left; // Birleştirilmiş dizideki indeks
-    while (i < n1 && j < n2) {
-        if (Left[i] <= Right[j]) {
+    while (i < n1 && j < n2) 
+    {
+        if (Left[i] <= Right[j]) 
+	{
             arr[k] = Left[i];
             i++;
-        } else {
+        } 
+	else 
+	{
             arr[k] = Right[j];
             j++;
         }
@@ -30,21 +35,25 @@ void merge(int arr[], int left, int mid, int right) {
     }
 
     // Kalan elemanları kopyala (eğer varsa)
-    while (i < n1) {
+    while (i < n1) 
+    {
         arr[k] = Left[i];
         i++;
         k++;
     }
 
-    while (j < n2) {
+    while (j < n2) 
+    {
         arr[k] = Right[j];
         j++;
         k++;
     }
 }
 
-void mergeSort(int arr[], int left, int right) {
-    if (left < right) {
+void mergeSort(int arr[], int left, int right) 
+{
+    if (left < right) 
+    {
         // Diziyi ikiye böl
         int mid = left + (right - left) / 2;
 
@@ -57,7 +66,8 @@ void mergeSort(int arr[], int left, int right) {
     }
 }
 
-int main() {
+int main() 
+{
     int n;
 
     printf("Dizi boyutunu girin: ");
@@ -66,13 +76,15 @@ int main() {
     int Array[n];
 
     printf("Dizinin elemanlarını girin:\n");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         printf("Eleman %d: ", i + 1);
         scanf("%d", &Array[i]);
     }
 
 	printf("önce: ");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         printf("%d ", Array[i]);
     }
     printf("\n");
@@ -80,7 +92,8 @@ int main() {
     mergeSort(Array, 0, n - 1);
 
     printf("sonra: ");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         printf("%d ", Array[i]);
     }
 
