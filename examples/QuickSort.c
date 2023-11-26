@@ -39,25 +39,37 @@ void quickSort(int arr[], int low, int high)
     }
 }
 
-// örnek kullanım
 int main() 
 {
-    int Array[] = {64, 25, 12, 22, 11};
-    int n = sizeof(Array) / sizeof(Array[0]);
+    int n;
 
-	printf("önce: ");
+    printf("Dizi boyutunu girin: ");
+    scanf("%d", &n);
+
+    int Array[n];
+
+    printf("Dizinin elemanlarını girin:\n");
+    for (int i = 0; i < n; i++) 
+    {
+        printf("Eleman %d: ", i + 1);
+        scanf("%d", &Array[i]);
+    }
+
+    printf("Önce: ");
     for (int i = 0; i < n; i++) 
     {
         printf("%d ", Array[i]);
     }
     printf("\n");
+
     quickSort(Array, 0, n - 1);
 
-    printf("sonra: ");
+    printf("Sonra: ");
     for (int i = 0; i < n; i++) 
     {
         printf("%d ", Array[i]);
     }
+    printf("\n");
 
     return 0;
 }

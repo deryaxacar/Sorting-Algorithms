@@ -21,24 +21,37 @@ void selectionSort(int arr[], int n)
     }
 }
 
-// Örnek kullanım
 int main() 
 {
-    int Array[] = {64, 25, 12, 22, 11};
-    int n = sizeof(Array) / sizeof(Array[0]);
-    
-    printf("önce: ");
-     for (int i = 0; i < n; i++) 
+    int n;
+
+    printf("Dizi boyutunu girin: ");
+    scanf("%d", &n);
+
+    int Array[n];
+
+    printf("Dizinin elemanlarını girin:\n");
+    for (int i = 0; i < n; i++) 
+    {
+        printf("Eleman %d: ", i + 1);
+        scanf("%d", &Array[i]);
+    }
+
+    printf("Önce: ");
+    for (int i = 0; i < n; i++) 
     {
         printf("%d ", Array[i]);
     }
     printf("\n");
+
     selectionSort(Array, n);
+
     printf("Sonra: ");
     for (int i = 0; i < n; i++) 
     {
         printf("%d ", Array[i]);
     }
-    
+    printf("\n");
+
     return 0;
 }

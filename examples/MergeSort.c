@@ -16,8 +16,8 @@ void merge(int arr[], int left, int mid, int right)
         Right[j] = arr[mid + 1 + j];
 
     // Geçici alt dizileri birleştirerek sıralı diziyi oluştur
-    i = 0; // İlk alt dizi için indeks
-    j = 0; // İkinci alt dizi için indeks
+    i = 0;
+    j = 0;
     k = left; // Birleştirilmiş dizideki indeks
     while (i < n1 && j < n2) 
     {
@@ -87,12 +87,15 @@ int main()
         printf("%d ", Array[i]);
     }
     printf("\n");
+
     mergeSort(Array, 0, n - 1);
+
     printf("sonra: ");
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < n; i++)
     {
         printf("%d ", Array[i]);
     }
+    printf("\n");
 
     return 0;
 }

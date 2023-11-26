@@ -31,20 +31,21 @@ int main()
         printf("Eleman %d: ", i + 1);
         scanf("%d", &Array[i]);
     }
-	printf("önce: ");
+    printf("önce: ");
     for (int i = 0; i < n; i++) 
     {
         printf("%d ", Array[i]);
     }
     printf("\n");
-    
-    bubbleSort(Array, n);
 
+    bubbleSort(Array, n);
     printf("sonra: ");
+    
     for (int i = 0; i < n; i++) 
     {
         printf("%d ", Array[i]);
     }
+    printf("\n");
 
     return 0;
 }
