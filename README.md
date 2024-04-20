@@ -6,15 +6,20 @@ Bu depo, çeşitli sıralama algoritmalarının C dilinde uygulanmış halini i�
 
 Şu anda bu depoda aşağıdaki sıralama algoritmaları bulunmaktadır:
 
-1. **Bubble Sort**: Bu algoritma, birbirini takip eden iki elemanı karşılaştırarak, gerektiğinde yer değiştirerek sıralama yapar. Yani, listedeki her elemanı yanındaki elemanla karşılaştırır ve gerektiğinde yer değiştirir. Bu işlem, listenin sonuna kadar devam eder ve en büyük eleman en sona yerleşir. Ardından, bu işlem liste üzerinde tekrarlanarak sıralama tamamlanır.
+1. **Bubble Sort**:
+   - Bu algoritma, birbirini takip eden iki elemanı karşılaştırarak, gerektiğinde yer değiştirerek sıralama yapar. Yani, listedeki her elemanı yanındaki elemanla karşılaştırır ve gerektiğinde yer değiştirir. Bu işlem, listenin sonuna kadar devam eder ve en büyük eleman en sona yerleşir. Ardından, bu işlem liste üzerinde tekrarlanarak sıralama tamamlanır.
 
-2. **Insertion Sort**: Bu algoritma, elemanları sıralı ve sırasız olarak iki kısma böler ve sıralı kısmın içine yerleştirir. Listenin ikinci elemanından başlayarak, her elemanı sıralı kısmın içindeki uygun konuma yerleştirir. Bu işlem, listenin son elemanına kadar devam eder ve listenin tamamı sıralanmış olur.
+3. **Insertion Sort**:
+   - Bu algoritma, elemanları sıralı ve sırasız olarak iki kısma böler ve sıralı kısmın içine yerleştirir. Listenin ikinci elemanından başlayarak, her elemanı sıralı kısmın içindeki uygun konuma yerleştirir. Bu işlem, listenin son elemanına kadar devam eder ve listenin tamamı sıralanmış olur.
 
-3. **Selection Sort**: Bu algoritma, dizideki en küçük (veya en büyük) elemanı bulup, dizinin başına (veya sonuna) yerleştirerek sıralama yapar. Listenin her bir elemanı için en küçük (veya en büyük) elemanı bulur ve bu elemanı listenin başına (veya sonuna) yerleştirir. Bu işlem, listenin tamamı sıralanana kadar devam eder.
+5. **Selection Sort**:
+   - Bu algoritma, dizideki en küçük (veya en büyük) elemanı bulup, dizinin başına (veya sonuna) yerleştirerek sıralama yapar. Listenin her bir elemanı için en küçük (veya en büyük) elemanı bulur ve bu elemanı listenin başına (veya sonuna) yerleştirir. Bu işlem, listenin tamamı sıralanana kadar devam eder.
 
-4. **Merge Sort**: Bu algoritma, diziyi ikiye bölerek her bir parçayı ayrı ayrı sıralar, ardından birleştirerek sıralı bir dizi elde eder. Listenin ortası bulunarak ikiye bölünür, ardından her bir parça için merge sort algoritması uygulanır. Son olarak, birleştirme işlemiyle sıralı diziler birleştirilir.
+7. **Merge Sort**:
+   - Bu algoritma, diziyi ikiye bölerek her bir parçayı ayrı ayrı sıralar, ardından birleştirerek sıralı bir dizi elde eder. Listenin ortası bulunarak ikiye bölünür, ardından her bir parça için merge sort algoritması uygulanır. Son olarak, birleştirme işlemiyle sıralı diziler birleştirilir.
 
-5. **Quick Sort**: Bu algoritma, bir pivot eleman seçerek diziyi pivot elemanın solunda küçük, sağında büyük olacak şekilde bölüp sıralama yapar. İlk olarak bir pivot eleman seçilir, daha sonra dizideki diğer elemanlar pivot elemanın sağında veya solunda olacak şekilde bölünür. Bu işlem rekürsif olarak tekrarlanır ve sonunda tüm dizinin sıralı olduğu garanti edilir.
+9. **Quick Sort**:
+    - Bu algoritma, bir pivot eleman seçerek diziyi pivot elemanın solunda küçük, sağında büyük olacak şekilde bölüp sıralama yapar. İlk olarak bir pivot eleman seçilir, daha sonra dizideki diğer elemanlar pivot elemanın sağında veya solunda olacak şekilde bölünür. Bu işlem rekürsif olarak tekrarlanır ve sonunda tüm dizinin sıralı olduğu garanti edilir.
 
 ## Performans Karşılaştırması
 
