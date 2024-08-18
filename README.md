@@ -42,3 +42,6 @@ Her bir sıralama algoritması kendi C dosyasına sahiptir. Algoritmayı kullanm
 ```bash
 gcc bubble_sort.c -o bubble_sort
 ./bubble_sort
+```
+
+---
